@@ -384,8 +384,5 @@ def on_app_started(_: gr.Blocks, app: FastAPI):
         pass
 
 
-try:
-    script_callbacks.on_app_started(on_app_started)
-    print('sd-webui-prompt-all-in-one background API service started successfully.')
-except Exception as e:
-    print(f'sd-webui-prompt-all-in-one background API service failed to start: {e}')
+script_callbacks.on_app_started(on_app_started)
+
